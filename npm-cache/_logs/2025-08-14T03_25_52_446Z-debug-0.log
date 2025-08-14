@@ -1,19 +1,19 @@
 0 verbose cli /usr/local/bin/node /usr/local/bin/npm
-1 info using npm@11.5.2
-2 info using node@v22.17.1
+1 info using npm@10.8.2
+2 info using node@v20.19.4
 3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
 4 silly config load:file:/Users/paolagisler/.npmrc
 5 silly config load:file:/usr/local/etc/npmrc
 6 verbose title npm view @anthropic-ai/claude-code@latest version
 7 verbose argv "view" "@anthropic-ai/claude-code@latest" "version"
-8 verbose logfile logs-max:10 dir:/Users/paolagisler/Desktop/Pedro/npm-cache/_logs/2025-08-10T00_56_14_998Z-
-9 verbose logfile /Users/paolagisler/Desktop/Pedro/npm-cache/_logs/2025-08-10T00_56_14_998Z-debug-0.log
+8 verbose logfile logs-max:10 dir:/Users/paolagisler/Desktop/Pedro/npm-cache/_logs/2025-08-14T03_25_52_446Z-
+9 verbose logfile /Users/paolagisler/Desktop/Pedro/npm-cache/_logs/2025-08-14T03_25_52_446Z-debug-0.log
 10 silly logfile start cleaning logs, removing 1 files
 11 silly logfile done cleaning log files
-12 http fetch GET 200 https://registry.npmjs.org/@anthropic-ai%2fclaude-code 182ms (cache revalidated)
+12 http fetch GET 200 https://registry.npmjs.org/@anthropic-ai%2fclaude-code 146ms (cache revalidated)
 13 verbose cwd /Users/paolagisler/Desktop/Pedro
 14 verbose os Darwin 24.6.0
-15 verbose node v22.17.1
-16 verbose npm  v11.5.2
+15 verbose node v20.19.4
+16 verbose npm  v10.8.2
 17 verbose exit 0
 18 info ok
