@@ -118,7 +118,7 @@ export function UrbanHero() {
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
               Where ancient healing wisdom meets urban sanctuary. 
-              Experience transformation in a space designed for today's seeker.
+              Experience transformation in a space designed for today&apos;s seeker.
             </p>
           </motion.div>
           

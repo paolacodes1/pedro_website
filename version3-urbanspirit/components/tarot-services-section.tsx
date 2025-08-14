@@ -8,7 +8,7 @@ interface Service {
   title: string;
   description: string;
   price: string;
-  icon: React.ComponentType;
+  icon: React.ComponentType<{ className?: string }>;
   cardImage: string;
   benefits: string[];
 }
