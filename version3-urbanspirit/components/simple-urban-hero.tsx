@@ -76,7 +76,7 @@ export function SimpleUrbanHero() {
           </h2>
           <p className="text-xl text-charcoal/80 max-w-2xl mx-auto">
             Where ancient healing wisdom meets urban sanctuary. 
-            Experience transformation in a space designed for today's seeker.
+            Experience transformation in a space designed for today&apos;s seeker.
           </p>
         </div>
         
