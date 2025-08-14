@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Remove basePath and assetPrefix - GitHub Pages will serve from root
+  basePath: '/pedro_website',
+  assetPrefix: '/pedro_website/',
 };
 
 export default nextConfig;
