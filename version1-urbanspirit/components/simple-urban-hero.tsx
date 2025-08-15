@@ -55,18 +55,6 @@ export function SimpleUrbanHero() {
           <div className="w-24 h-2 bg-gradient-to-r from-deep-plum to-antique-gold mx-auto rounded-full" />
         </div>
         
-        {/* Services */}
-        <div className="flex flex-wrap gap-8 justify-center items-center text-xl">
-          <div className="flex items-center gap-3 bg-warm-ivory/90 backdrop-blur-sm px-8 py-4 rounded-full border border-sage-blue/40 shadow-lg">
-            <Sun className="text-antique-gold w-6 h-6" />
-            <span className="text-charcoal font-semibold">Reiki Healing</span>
-          </div>
-          <div className="flex items-center gap-3 bg-warm-ivory/90 backdrop-blur-sm px-8 py-4 rounded-full border border-sage-blue/40 shadow-lg">
-            <Leaf className="text-deep-plum w-6 h-6" />
-            <span className="text-charcoal font-semibold">Tarot Reading</span>
-          </div>
-        </div>
-        
         {/* Tagline */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-montserrat font-medium text-charcoal">
@@ -78,6 +66,53 @@ export function SimpleUrbanHero() {
             Where ancient healing wisdom meets urban sanctuary. 
             Experience transformation in a space designed for today&apos;s seeker.
           </p>
+        </div>
+        
+        {/* Services */}
+        <div className="space-y-8">
+          <div className="flex flex-wrap gap-8 justify-center items-center text-xl">
+            <div className="flex items-center gap-3 bg-warm-ivory/90 backdrop-blur-sm px-8 py-4 rounded-full border border-sage-blue/40 shadow-lg">
+              <Sun className="text-antique-gold w-6 h-6" />
+              <span className="text-charcoal font-semibold">Reiki Healing</span>
+            </div>
+            <div className="flex items-center gap-3 bg-warm-ivory/90 backdrop-blur-sm px-8 py-4 rounded-full border border-sage-blue/40 shadow-lg">
+              <Leaf className="text-deep-plum w-6 h-6" />
+              <span className="text-charcoal font-semibold">Tarot Reading</span>
+            </div>
+          </div>
+          
+          {/* Service Details */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Reiki Healing Details */}
+            <div className="bg-warm-ivory/70 backdrop-blur-sm rounded-2xl p-6 border border-sage-blue/30 shadow-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <Sun className="text-antique-gold w-8 h-8" />
+                <h3 className="text-2xl font-montserrat font-semibold text-charcoal">Reiki Healing</h3>
+              </div>
+              <p className="text-charcoal/80 mb-4">
+                Experience the profound healing power of universal life energy. Through gentle touch and energy channeling, restore balance to your body, mind, and spirit.
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="text-2xl font-semibold text-deep-plum">From $80</div>
+                <div className="text-sm text-charcoal/60">Per session</div>
+              </div>
+            </div>
+
+            {/* Tarot Reading Details */}
+            <div className="bg-warm-ivory/70 backdrop-blur-sm rounded-2xl p-6 border border-sage-blue/30 shadow-lg">
+              <div className="flex items-center gap-3 mb-4">
+                <Leaf className="text-deep-plum w-8 h-8" />
+                <h3 className="text-2xl font-montserrat font-semibold text-charcoal">Tarot Reading</h3>
+              </div>
+              <p className="text-charcoal/80 mb-4">
+                Gain clarity and insight into your life&apos;s journey through the ancient wisdom of tarot. Each reading reveals hidden patterns and illuminates your path.
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="text-2xl font-semibold text-deep-plum">From $60</div>
+                <div className="text-sm text-charcoal/60">Per session</div>
+              </div>
+            </div>
+          </div>
         </div>
         
         {/* CTA Buttons */}

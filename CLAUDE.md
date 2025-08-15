@@ -6,10 +6,8 @@ Building three completely standalone website versions for Pedro Tisott's Reiki a
 ## Project Structure
 ```
 Pedro/
-├── version1-streetzen/          # Complete Next.js app - Street fashion meets zen
-├── version2-neonmystic/         # Complete Next.js app - Cyberpunk spirituality  
-├── version3-urbanspirit/        # Complete Next.js app - Contemporary metropolitan
-├── shared-components-template/   # Template components to copy to each version
+├── version1-urbanspirit/        # Complete Next.js app - V1: Deployed Urban Spirit (curtains + tarot cards)
+├── version2-urbanspirit/        # Complete Next.js app - V2: Working development version  
 ├── pedro-website-docs.md        # Original design documentation
 └── CLAUDE.md                   # This file - project tracking
 ```
@@ -87,7 +85,22 @@ npm run lint
 - **Style**: Contemporary sophisticated with spiritual elegance
 - **Port**: 3001
 
-## Current Progress - Version 3 Complete ✅
+## Version Structure
+
+### Version 1 (Deployed & Live) ✅
+- **Live URL**: https://paolacodes1.github.io/pedro_website/  
+- **Branch**: `v1` branch in repository
+- **Folder**: `version1-urbanspirit/`
+- **Status**: Complete and deployed with GitHub Pages
+- **Features**: Hero with curtains, tarot card services, full responsive design
+
+### Version 2 (Active Development) 🚧
+- **Folder**: `version2-urbanspirit/`
+- **Status**: Ready for new features and iterations
+- **Base**: Copy of V1 codebase for continued development
+- **Purpose**: Working version for future enhancements
+
+## Current Progress - Version 1 Complete ✅
 - [x] Documentation review and planning
 - [x] CLAUDE.md setup  
 - [x] Version 3 (Urban Spirit) project setup and hero implementation
