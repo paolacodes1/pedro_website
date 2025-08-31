@@ -21,7 +21,7 @@ export function SimpleUrbanHero() {
       <div className="relative z-10 text-center space-y-12 max-w-4xl px-4">
         {/* Main title */}
         <div>
-          <h1 className="font-poiret-one text-6xl md:text-8xl font-normal text-ivory-light mb-6">
+          <h1 className="font-poiret-one text-6xl md:text-8xl font-normal text-ivory-light mb-6" style={{fontFamily: 'Poiret One, cursive'}}>
             Etheria Tarot
           </h1>
           <div className="w-24 h-2 bg-gradient-to-r from-rich-burgundy to-warm-gold mx-auto rounded-full" />
@@ -29,7 +29,7 @@ export function SimpleUrbanHero() {
         
         {/* Tagline */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-poiret-one font-normal text-ivory-light">
+          <h2 className="text-3xl md:text-4xl font-poiret-one font-normal text-ivory-light" style={{fontFamily: 'Poiret One, cursive'}}>
             Mystical Guidance
             <br />
             <span className="text-warm-gold">for the Awakened Soul</span>
