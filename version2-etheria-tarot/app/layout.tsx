@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-cormorant-infant antialiased bg-gradient-to-br from-slate-50 to-stone-100">
+      <body className="font-cormorant-infant antialiased bg-black-pearl text-ivory-light">
         {children}
       </body>
     </html>
