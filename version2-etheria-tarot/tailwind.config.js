@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'poiret-one': ['var(--font-poiret-one)', 'cursive'],
-        'cormorant-infant': ['var(--font-cormorant-infant)', 'serif'],
+        'poiret-one': ['Poiret One', 'cursive'],
+        'cormorant-infant': ['Cormorant Infant', 'serif'],
       },
       colors: {
         // Etheria Tarot Brand Colors
