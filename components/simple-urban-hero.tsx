@@ -81,38 +81,6 @@ export function SimpleUrbanHero() {
             </div>
           </div>
           
-          {/* Service Details */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Reiki Healing Details */}
-            <div className="bg-deep-maroon/70 backdrop-blur-sm rounded-2xl p-6 border border-warm-gold/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Sun className="text-warm-gold w-8 h-8" />
-                <h3 className="text-2xl font-montserrat font-semibold text-ivory-light">Oráculo de Etherias</h3>
-              </div>
-              <p className="text-ivory-light/80 mb-4">
-                Connect with the ethereal realm through sacred oracle cards. Receive guidance from higher dimensions and unlock mystical insights about your spiritual journey.
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="text-2xl font-semibold text-warm-gold">From $60</div>
-                <div className="text-sm text-ivory-light/60">Per session</div>
-              </div>
-            </div>
-
-            {/* Tarot Reading Details */}
-            <div className="bg-deep-maroon/70 backdrop-blur-sm rounded-2xl p-6 border border-warm-gold/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Leaf className="text-warm-gold w-8 h-8" />
-                <h3 className="text-2xl font-montserrat font-semibold text-ivory-light">Tarot de Thoth</h3>
-              </div>
-              <p className="text-ivory-light/80 mb-4">
-                Dive deep into the esoteric wisdom of Aleister Crowley&apos;s Thoth deck. Each reading unveils profound archetypal truths and illuminates your soul&apos;s path.
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="text-2xl font-semibold text-warm-gold">From $80</div>
-                <div className="text-sm text-ivory-light/60">Per session</div>
-              </div>
-            </div>
-          </div>
         </div>
         
         {/* CTA Buttons */}
