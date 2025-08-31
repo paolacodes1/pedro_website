@@ -1,22 +1,16 @@
 'use client'
 import { Button } from '@/components/ui/button';
-import { EtherealShadow } from '@/components/ui/ethereal-shadow';
 import { Leaf, Sun, Heart } from 'lucide-react';
 
 export function SimpleUrbanHero() {
   return (
-    <section className="min-h-screen relative overflow-hidden">
-      <EtherealShadow
-        color="#1C1C1C"
-        animation={{ scale: 80, speed: 60 }}
-        noise={{ opacity: 0.6, scale: 1.2 }}
-        sizing="fill"
-        className="absolute inset-0"
-      >
-        <div className="min-h-screen flex items-center justify-center relative">
-      {/* Simple background elements */}
+    <section className="min-h-screen relative overflow-hidden bg-black-pearl">
+      {/* Background elements */}
+      <div className="absolute inset-0 bg-black-pearl" />
       <div className="absolute top-20 right-20 w-80 h-80 bg-warm-gold/20 rounded-full filter blur-3xl" />
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-rich-burgundy/30 rounded-full filter blur-3xl" />
+      
+      <div className="min-h-screen flex items-center justify-center relative z-10">
       
       <div className="relative z-10 text-center space-y-12 max-w-4xl px-4">
         {/* Main title */}
@@ -92,7 +86,6 @@ export function SimpleUrbanHero() {
         <div className="w-6 h-6 border-l-2 border-b-2 border-warm-gold transform rotate-[-45deg]"></div>
       </div>
         </div>
-      </EtherealShadow>
     </section>
   );
 }
