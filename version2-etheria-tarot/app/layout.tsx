@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Montserrat, DM_Sans } from "next/font/google";
+import { Poiret_One, Cormorant_Infant } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const poiretOne = Poiret_One({
+  weight: '400',
   subsets: ['latin'],
-  variable: '--font-montserrat'
+  variable: '--font-poiret-one'
 });
 
-const dmSans = DM_Sans({
+const cormorantInfant = Cormorant_Infant({
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
-  variable: '--font-dm-sans'
+  variable: '--font-cormorant-infant'
 });
 
 export const metadata: Metadata = {
@@ -29,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${dmSans.variable}`}>
-      <body className="font-dm-sans antialiased bg-gradient-to-br from-slate-50 to-stone-100">
+    <html lang="en" className={`${poiretOne.variable} ${cormorantInfant.variable}`}>
+      <body className="font-cormorant-infant antialiased bg-gradient-to-br from-slate-50 to-stone-100">
         {children}
       </body>
     </html>
