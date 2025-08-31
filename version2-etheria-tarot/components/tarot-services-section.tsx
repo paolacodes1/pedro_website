@@ -153,7 +153,7 @@ function TarotCard({ service }: TarotCardProps) {
                 <service.icon className="w-12 h-12 text-black-pearl" />
               </div>
               
-              <h3 className="text-2xl font-montserrat font-semibold text-ivory-light">{service.title}</h3>
+              <h3 className="text-2xl font-poiret-one font-normal text-ivory-light">{service.title}</h3>
               <div className="text-lg font-medium text-warm-gold">{service.price}</div>
               
               {/* Benefits */}
@@ -190,7 +190,7 @@ function ServiceDescription({ service }: ServiceDescriptionProps) {
       className="space-y-6"
     >
       <div className="space-y-4">
-        <h3 className="text-3xl md:text-4xl font-montserrat font-light text-ivory-light">
+        <h3 className="text-3xl md:text-4xl font-poiret-one font-normal text-ivory-light">
           {service.title}
         </h3>
         <div className="w-16 h-0.5 bg-gradient-to-r from-rich-burgundy to-warm-gold"></div>
@@ -230,7 +230,7 @@ export function TarotServicesSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-montserrat font-light text-ivory-light mb-6">
+          <h2 className="text-4xl md:text-5xl font-poiret-one font-normal text-ivory-light mb-6">
             Mystical Services
           </h2>
           <div className="w-24 h-px bg-gradient-to-r from-rich-burgundy via-warm-gold to-rich-burgundy mx-auto mb-6"></div>
