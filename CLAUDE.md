@@ -1,7 +1,9 @@
 # Pedro Tisott Website Project - Development Guide
 
 ## Project Overview
-Building three completely standalone website versions for Pedro Tisott's Reiki and tarot services. Each version is self-contained with no shared dependencies.
+Building standalone website versions for Pedro's **Etheria Tarot** brand. Each version is self-contained with no shared dependencies. 
+
+**NEW BRAND IDENTITY**: Etheria Tarot - Professional mystical services including Oráculo de Etherias and Tarot de Thoth readings.
 
 ## Project Structure
 ```
@@ -94,11 +96,17 @@ npm run lint
 - **Status**: Complete and deployed with GitHub Pages
 - **Features**: Hero with curtains, tarot card services, full responsive design
 
-### Version 2 (Active Development) 🚧
-- **Folder**: `version2-urbanspirit/`
-- **Status**: Ready for new features and iterations
-- **Base**: Copy of V1 codebase for continued development
-- **Purpose**: Working version for future enhancements
+### Version 2: Etheria Tarot 🚧 ACTIVE
+- **Folder**: `version2-etheria-tarot/`
+- **Status**: New Etheria Tarot rebrand in progress
+- **Base**: Copy of V1 codebase with new branding
+- **Brand**: Etheria Tarot - dark mystical aesthetic
+- **Colors**: 
+  - Rich Burgundy (#800020) - primary brand color from logo
+  - Deep Maroon (#722F37) - secondary burgundy shade
+  - Warm Gold (#D4AF37) - mystical accent like candlelight
+  - Black Pearl (#1C1C1C) - sophisticated dark background
+  - Ivory Light (#F9F7F4) - minimal light accents
 
 ## Current Progress - Version 1 Complete ✅
 - [x] Documentation review and planning
