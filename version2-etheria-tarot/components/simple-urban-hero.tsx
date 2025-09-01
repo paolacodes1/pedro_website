@@ -48,7 +48,7 @@ export function SimpleUrbanHero() {
       <div className="relative z-10 text-center space-y-12 max-w-4xl px-4">
         {/* Main title */}
         <div>
-          <h1 className="font-montserrat text-6xl md:text-8xl font-bold text-ivory-light mb-6">
+          <h1 className="font-poiret-one text-6xl md:text-8xl font-bold text-ivory-light mb-6">
             Etheria Tarot
           </h1>
           <div className="w-24 h-2 bg-gradient-to-r from-rich-burgundy to-warm-gold mx-auto rounded-full" />
@@ -56,12 +56,12 @@ export function SimpleUrbanHero() {
         
         {/* Tagline */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-medium text-ivory-light">
+          <h2 className="text-3xl md:text-4xl font-poiret-one font-medium text-ivory-light">
             Mystical Guidance
             <br />
             <span className="text-warm-gold">for the Awakened Soul</span>
           </h2>
-          <p className="text-xl text-ivory-light/80 max-w-2xl mx-auto">
+          <p className="text-xl text-ivory-light/80 max-w-2xl mx-auto font-cormorant-infant">
             Unlock the secrets of the ethereal realm through ancient divination. 
             Experience profound insights with tarot and oracle readings.
           </p>
@@ -72,11 +72,11 @@ export function SimpleUrbanHero() {
           <div className="flex flex-wrap gap-8 justify-center items-center text-xl">
             <div className="flex items-center gap-3 bg-deep-maroon/90 backdrop-blur-sm px-8 py-4 rounded-full border border-warm-gold/40 shadow-lg">
               <Sun className="text-warm-gold w-6 h-6" />
-              <span className="text-ivory-light font-semibold">Oráculo de Etherias</span>
+              <span className="text-ivory-light font-semibold font-cormorant-infant">Oráculo de Etherias</span>
             </div>
             <div className="flex items-center gap-3 bg-deep-maroon/90 backdrop-blur-sm px-8 py-4 rounded-full border border-warm-gold/40 shadow-lg">
               <Leaf className="text-warm-gold w-6 h-6" />
-              <span className="text-ivory-light font-semibold">Tarot de Thoth</span>
+              <span className="text-ivory-light font-semibold font-cormorant-infant">Tarot de Thoth</span>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export function SimpleUrbanHero() {
       
       {/* Find out more arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
-        <span className="text-ivory-light/70 text-sm font-medium mb-2">Discover the mysteries</span>
+        <span className="text-ivory-light/70 text-sm font-medium mb-2 font-cormorant-infant">Discover the mysteries</span>
         <div className="w-6 h-6 border-l-2 border-b-2 border-warm-gold transform rotate-[-45deg]"></div>
       </div>
     </section>
