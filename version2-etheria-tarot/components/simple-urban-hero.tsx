@@ -62,8 +62,9 @@ export function SimpleUrbanHero() {
             <span className="text-warm-gold">for the Awakened Soul</span>
           </h2>
           <p className="text-xl text-ivory-light/80 max-w-2xl mx-auto font-cormorant-infant">
-            Unlock the secrets of the ethereal realm through ancient divination. 
-            Experience profound insights with tarot and oracle readings.
+            Profound readings with Thoth Tarot, channeled with intuition, symbols and spiritual connection.
+            From 7€ (mini reading) to 15€ (complete reading). All readings delivered via audio + written summary.
+            Choose your reading and book your consultation via DM.
           </p>
         </div>
         
@@ -72,11 +73,11 @@ export function SimpleUrbanHero() {
           <div className="flex flex-wrap gap-8 justify-center items-center text-xl">
             <div className="flex items-center gap-3 bg-deep-maroon/90 backdrop-blur-sm px-8 py-4 rounded-full border border-warm-gold/40 shadow-lg">
               <Sun className="text-warm-gold w-6 h-6" />
-              <span className="text-ivory-light font-semibold font-cormorant-infant">Oráculo de Etherias</span>
+              <span className="text-ivory-light font-semibold font-cormorant-infant">Oracle of Etherias</span>
             </div>
             <div className="flex items-center gap-3 bg-deep-maroon/90 backdrop-blur-sm px-8 py-4 rounded-full border border-warm-gold/40 shadow-lg">
               <Leaf className="text-warm-gold w-6 h-6" />
-              <span className="text-ivory-light font-semibold font-cormorant-infant">Tarot de Thoth</span>
+              <span className="text-ivory-light font-semibold font-cormorant-infant">Thoth Tarot</span>
             </div>
           </div>
         </div>
