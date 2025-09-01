@@ -117,20 +117,20 @@ function TarotCard({ service, index }: TarotCardProps) {
         </div>
 
         {/* Card Front (Service Info) */}
-        <div className="absolute inset-0 w-full h-full rounded-2xl bg-gradient-to-br from-ivory-light via-ivory-light to-warm-gold/10 shadow-2xl" 
+        <div className="absolute inset-0 w-full h-full rounded-2xl bg-gradient-to-br from-black-pearl via-deep-maroon to-rich-burgundy shadow-2xl" 
              style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
           <div className="flex flex-col h-full p-6">
             <div className="flex-1 flex flex-col items-center justify-center text-center space-y-6">
-              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-rich-burgundy to-deep-maroon rounded-full flex items-center justify-center shadow-lg">
+              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-warm-gold/20 to-warm-gold/10 rounded-full flex items-center justify-center shadow-lg border border-warm-gold/30">
                 <div className="text-4xl">{service.cardImage}</div>
               </div>
               
-              <h3 className="text-2xl font-poiret-one font-semibold text-black-pearl">{service.title}</h3>
-              <div className="text-lg font-medium text-rich-burgundy">{service.price}</div>
+              <h3 className="text-2xl font-poiret-one font-semibold text-ivory-light">{service.title}</h3>
+              <div className="text-lg font-medium text-warm-gold">{service.price}</div>
               
               <div className="space-y-2">
                 {service.benefits.map((benefit, idx) => (
-                  <div key={idx} className="flex items-center justify-center gap-2 text-sm text-black-pearl/70">
+                  <div key={idx} className="flex items-center justify-center gap-2 text-sm text-ivory-light/80">
                     <div className="w-1.5 h-1.5 bg-warm-gold rounded-full"></div>
                     <span>{benefit}</span>
                   </div>
