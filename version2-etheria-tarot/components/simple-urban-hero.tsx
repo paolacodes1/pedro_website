@@ -1,5 +1,4 @@
 'use client'
-import { Leaf, Sun } from 'lucide-react';
 
 export function SimpleUrbanHero() {
   return (
@@ -66,20 +65,6 @@ export function SimpleUrbanHero() {
             From 7€ (mini reading) to 15€ (complete reading). All readings delivered via audio + written summary.
             Choose your reading and book your consultation via DM.
           </p>
-        </div>
-        
-        {/* Services */}
-        <div className="space-y-8">
-          <div className="flex flex-wrap gap-8 justify-center items-center text-xl">
-            <div className="flex items-center gap-3 bg-deep-maroon/90 backdrop-blur-sm px-8 py-4 rounded-full border border-warm-gold/40 shadow-lg">
-              <Sun className="text-warm-gold w-6 h-6" />
-              <span className="text-ivory-light font-semibold font-cormorant-infant">Oracle of Etherias</span>
-            </div>
-            <div className="flex items-center gap-3 bg-deep-maroon/90 backdrop-blur-sm px-8 py-4 rounded-full border border-warm-gold/40 shadow-lg">
-              <Leaf className="text-warm-gold w-6 h-6" />
-              <span className="text-ivory-light font-semibold font-cormorant-infant">Thoth Tarot</span>
-            </div>
-          </div>
         </div>
       </div>
       
