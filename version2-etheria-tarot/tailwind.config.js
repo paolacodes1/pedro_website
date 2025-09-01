@@ -8,16 +8,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'poiret-one': ['Poiret One', 'cursive'],
-        'cormorant-infant': ['Cormorant Infant', 'serif'],
+        'montserrat': ['var(--font-montserrat)', 'sans-serif'],
+        'dm-sans': ['var(--font-dm-sans)', 'sans-serif'],
       },
       colors: {
-        // Etheria Tarot Brand Colors
-        'rich-burgundy': '#800020',
-        'deep-maroon': '#722F37', 
-        'warm-gold': '#D4AF37',
-        'black-pearl': '#1C1C1C',
-        'ivory-light': '#F9F7F4',
+        // Version 1: Urban Spirit Colors
+        'warm-ivory': '#F9F5F1',
+        'deep-plum': '#7E4C74', 
+        'antique-gold': '#C3A27C',
+        'sage-blue': '#B2D0D3',
+        'charcoal': '#2B2B2B',
       },
     },
   },

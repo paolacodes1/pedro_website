@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
+import { Montserrat, DM_Sans } from "next/font/google";
 import "./globals.css";
 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat'
+});
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans'
+});
+
 export const metadata: Metadata = {
-  title: "Etheria Tarot - Mystical Guidance | TEST FONTS WORKING",
+  title: "Pedro Tisott - Reiki & Tarot | Urban Spirit",
   description: "Contemporary metropolitan wellness. Professional energy healing and spiritual guidance in an urban sanctuary.",
   keywords: ['Reiki', 'Tarot', 'Spiritual Healing', 'Energy Work', 'Pedro Tisott', 'Urban Spirit', 'Wellness'],
   openGraph: {
@@ -18,13 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Cormorant+Infant:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-cormorant-infant antialiased bg-black-pearl text-ivory-light" style={{fontFamily: 'Cormorant Infant, serif', backgroundColor: '#1C1C1C', color: '#F9F7F4'}}>
+    <html lang="en" className={`${montserrat.variable} ${dmSans.variable}`}>
+      <body className="font-dm-sans antialiased bg-gradient-to-br from-slate-50 to-stone-100">
         {children}
       </body>
     </html>
