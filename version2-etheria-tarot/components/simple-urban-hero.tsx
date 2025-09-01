@@ -50,7 +50,7 @@ export function SimpleUrbanHero() {
         {/* Main title */}
         <div>
           <h1 className="font-montserrat text-6xl md:text-8xl font-bold text-charcoal mb-6">
-            Pedro Tisott
+            Etheria Tarot
           </h1>
           <div className="w-24 h-2 bg-gradient-to-r from-deep-plum to-antique-gold mx-auto rounded-full" />
         </div>
@@ -58,13 +58,13 @@ export function SimpleUrbanHero() {
         {/* Tagline */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-montserrat font-medium text-charcoal">
-            Contemporary Wellness
+            Mystical Guidance
             <br />
-            <span className="text-deep-plum">for the Modern Soul</span>
+            <span className="text-deep-plum">for the Awakened Soul</span>
           </h2>
           <p className="text-xl text-charcoal/80 max-w-2xl mx-auto">
-            Where ancient healing wisdom meets urban sanctuary. 
-            Experience transformation in a space designed for today&apos;s seeker.
+            Unlock the secrets of the ethereal realm through ancient divination. 
+            Experience profound insights with tarot and oracle readings.
           </p>
         </div>
         
@@ -73,42 +73,42 @@ export function SimpleUrbanHero() {
           <div className="flex flex-wrap gap-8 justify-center items-center text-xl">
             <div className="flex items-center gap-3 bg-warm-ivory/90 backdrop-blur-sm px-8 py-4 rounded-full border border-sage-blue/40 shadow-lg">
               <Sun className="text-antique-gold w-6 h-6" />
-              <span className="text-charcoal font-semibold">Reiki Healing</span>
+              <span className="text-charcoal font-semibold">Oráculo de Etherias</span>
             </div>
             <div className="flex items-center gap-3 bg-warm-ivory/90 backdrop-blur-sm px-8 py-4 rounded-full border border-sage-blue/40 shadow-lg">
               <Leaf className="text-deep-plum w-6 h-6" />
-              <span className="text-charcoal font-semibold">Tarot Reading</span>
+              <span className="text-charcoal font-semibold">Tarot de Thoth</span>
             </div>
           </div>
           
           {/* Service Details */}
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Reiki Healing Details */}
+            {/* Oráculo de Etherias Details */}
             <div className="bg-warm-ivory/70 backdrop-blur-sm rounded-2xl p-6 border border-sage-blue/30 shadow-lg">
               <div className="flex items-center gap-3 mb-4">
                 <Sun className="text-antique-gold w-8 h-8" />
-                <h3 className="text-2xl font-montserrat font-semibold text-charcoal">Reiki Healing</h3>
+                <h3 className="text-2xl font-montserrat font-semibold text-charcoal">Oráculo de Etherias</h3>
               </div>
               <p className="text-charcoal/80 mb-4">
-                Experience the profound healing power of universal life energy. Through gentle touch and energy channeling, restore balance to your body, mind, and spirit.
+                Connect with the ethereal realm through sacred oracle guidance. Each reading reveals the mystical energies surrounding your path and awakens your inner wisdom.
               </p>
               <div className="flex items-center justify-between">
-                <div className="text-2xl font-semibold text-deep-plum">From $80</div>
+                <div className="text-2xl font-semibold text-deep-plum">From $60</div>
                 <div className="text-sm text-charcoal/60">Per session</div>
               </div>
             </div>
 
-            {/* Tarot Reading Details */}
+            {/* Tarot de Thoth Details */}
             <div className="bg-warm-ivory/70 backdrop-blur-sm rounded-2xl p-6 border border-sage-blue/30 shadow-lg">
               <div className="flex items-center gap-3 mb-4">
                 <Leaf className="text-deep-plum w-8 h-8" />
-                <h3 className="text-2xl font-montserrat font-semibold text-charcoal">Tarot Reading</h3>
+                <h3 className="text-2xl font-montserrat font-semibold text-charcoal">Tarot de Thoth</h3>
               </div>
               <p className="text-charcoal/80 mb-4">
-                Gain clarity and insight into your life&apos;s journey through the ancient wisdom of tarot. Each reading reveals hidden patterns and illuminates your path.
+                Experience the profound wisdom of Aleister Crowley&apos;s Thoth Tarot. These ancient symbols unlock deep spiritual insights and illuminate your soul&apos;s journey.
               </p>
               <div className="flex items-center justify-between">
-                <div className="text-2xl font-semibold text-deep-plum">From $60</div>
+                <div className="text-2xl font-semibold text-deep-plum">From $80</div>
                 <div className="text-sm text-charcoal/60">Per session</div>
               </div>
             </div>
@@ -121,14 +121,14 @@ export function SimpleUrbanHero() {
             size="lg" 
             className="bg-deep-plum hover:bg-deep-plum/90 text-warm-ivory px-12 py-4 text-xl font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Begin Your Journey
+            Begin Your Mystical Journey
           </Button>
           <Button 
             variant="outline"
             size="lg" 
             className="border-2 border-antique-gold text-charcoal hover:bg-antique-gold hover:text-charcoal px-12 py-4 text-xl font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Learn More
+            Book a Reading
           </Button>
         </div>
 
@@ -136,19 +136,19 @@ export function SimpleUrbanHero() {
         <div className="flex justify-center items-center gap-8 pt-12">
           <div className="flex items-center gap-2 text-charcoal/70">
             <Heart className="w-5 h-5 text-deep-plum" />
-            <span className="font-medium">Certified Practitioner</span>
+            <span className="font-medium">Mystical Practitioner</span>
           </div>
           <div className="w-px h-6 bg-sage-blue" />
           <div className="flex items-center gap-2 text-charcoal/70">
             <Sun className="w-5 h-5 text-antique-gold" />
-            <span className="font-medium">Urban Sanctuary</span>
+            <span className="font-medium">Ethereal Sanctuary</span>
           </div>
         </div>
       </div>
       
       {/* Find out more arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
-        <span className="text-charcoal/70 text-sm font-medium mb-2">Find out more</span>
+        <span className="text-charcoal/70 text-sm font-medium mb-2">Discover the mysteries</span>
         <div className="w-6 h-6 border-l-2 border-b-2 border-deep-plum transform rotate-[-45deg]"></div>
       </div>
     </section>

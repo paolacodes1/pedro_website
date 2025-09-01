@@ -13,13 +13,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Pedro Tisott - Reiki & Tarot | Urban Spirit",
-  description: "Contemporary metropolitan wellness. Professional energy healing and spiritual guidance in an urban sanctuary.",
-  keywords: ['Reiki', 'Tarot', 'Spiritual Healing', 'Energy Work', 'Pedro Tisott', 'Urban Spirit', 'Wellness'],
+  title: "Etheria Tarot - Mystical Guidance for the Awakened Soul",
+  description: "Unlock the secrets of the ethereal realm through ancient divination. Experience profound insights with tarot and oracle readings.",
+  keywords: ['Etheria Tarot', 'Oráculo de Etherias', 'Tarot de Thoth', 'Mystical Guidance', 'Oracle Readings', 'Spiritual Insights', 'Divination'],
   openGraph: {
-    title: 'Pedro Tisott - Urban Spirit',
-    description: 'Contemporary metropolitan wellness sanctuary',
-    images: ['/urban-og.jpg'],
+    title: 'Etheria Tarot - Mystical Guidance',
+    description: 'Mystical guidance for the awakened soul through ancient divination',
+    images: ['/etheria-og.jpg'],
   },
 };
 
