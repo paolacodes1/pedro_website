@@ -1,144 +1,203 @@
 'use client'
-import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useRef, useState, useEffect } from 'react';
 
-export function TarotServicesSection() {
+interface Service {
+  id: string;
+  title: string;
+  description: string;
+  price: string;
+  cardImage: string;
+  benefits: string[];
+}
+
+const services: Service[] = [
+  {
+    id: 'oracle',
+    title: 'Oracle of Etherias',
+    description: 'Connect with ethereal realms through sacred oracle guidance. Reveals mystical energies and awakens inner wisdom.',
+    price: 'From 7€',
+    cardImage: '🌟',
+    benefits: ['Ethereal guidance', 'Mystical energies', 'Inner wisdom', 'Spiritual awakening']
+  },
+  {
+    id: 'thoth',
+    title: 'Thoth Tarot',
+    description: 'Experience profound wisdom of Aleister Crowley\'s Thoth Tarot. Ancient symbols unlock deep spiritual insights.',
+    price: 'From 15€',
+    cardImage: '🔮',
+    benefits: ['Ancient wisdom', 'Spiritual insights', 'Deep understanding', 'Sacred symbols']
+  }
+];
+
+interface TarotCardProps {
+  service: Service;
+  index: number;
+}
+
+function TarotCard({ service, index }: TarotCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: false, amount: 0.5 });
-
+  const cardRef = useRef<HTMLDivElement>(null);
+  const cardIsInView = useInView(cardRef, { margin: "-20%", once: true });
+  
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const scrollingDown = currentScrollY > lastScrollY;
+    if (cardIsInView && !isFlipped) {
+      const timer = setTimeout(() => {
+        setIsFlipped(true);
+      }, 150);
       
-      if (isInView) {
-        setIsFlipped(scrollingDown);
-      }
-      
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY, isInView]);
+      return () => clearTimeout(timer);
+    }
+  }, [cardIsInView, isFlipped]);
 
   return (
-    <section ref={ref} className="py-20">
-      <div className="max-w-6xl mx-auto px-4">
-        <motion.div 
-          className="grid md:grid-cols-2 gap-12"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 50 }}
-          transition={{ duration: 0.8 }}
-        >
-          {/* Oracle of Etherias Card */}
-          <div className="perspective-1000">
-            <motion.div
-              className="card-container relative w-full h-80"
-              animate={{ rotateY: isFlipped ? 180 : 0 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-            >
-              {/* Card Front */}
-              <div className="absolute inset-0 backface-hidden rounded-2xl bg-gradient-to-br from-rich-burgundy to-deep-maroon border border-warm-gold/30 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-6 relative">
-                    <div className="absolute inset-0 rounded-full bg-warm-gold/20"></div>
-                    <svg className="w-full h-full" viewBox="0 0 100 100">
-                      {/* Mystical Oracle Symbol - Sacred Geometry */}
-                      <circle cx="50" cy="50" r="35" stroke="#D4AF37" strokeWidth="2" fill="none" opacity="0.8" />
-                      <circle cx="50" cy="50" r="20" stroke="#D4AF37" strokeWidth="1.5" fill="none" opacity="0.6" />
-                      <circle cx="50" cy="50" r="10" stroke="#D4AF37" strokeWidth="1" fill="none" opacity="0.8" />
-                      {/* Star pattern */}
-                      <path d="M50 15 L52 25 L50 35 L48 25 Z" fill="#D4AF37" opacity="0.7" />
-                      <path d="M50 65 L52 75 L50 85 L48 75 Z" fill="#D4AF37" opacity="0.7" />
-                      <path d="M15 50 L25 52 L35 50 L25 48 Z" fill="#D4AF37" opacity="0.7" />
-                      <path d="M65 50 L75 52 L85 50 L75 48 Z" fill="#D4AF37" opacity="0.7" />
-                      {/* Center dot */}
-                      <circle cx="50" cy="50" r="3" fill="#D4AF37" />
-                    </svg>
+    <div ref={cardRef} className="relative w-full max-w-xs mx-auto perspective-1000">
+      <motion.div
+        className="relative w-full h-[500px] cursor-pointer card-container"
+        style={{ 
+          transformStyle: 'preserve-3d',
+          transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
+        }}
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+        onClick={() => setIsFlipped(!isFlipped)}
+      >
+        {/* Card Back (Traditional Tarot Design) */}
+        <div className="absolute inset-0 w-full h-full rounded-2xl bg-gradient-to-br from-rich-burgundy via-rich-burgundy/90 to-deep-maroon shadow-2xl overflow-hidden" 
+             style={{ backfaceVisibility: 'hidden', transform: 'rotateY(0deg)' }}>
+          <div className="relative h-full p-4">
+            <div className="absolute inset-3 bg-ivory-light rounded-lg">
+              <div className="absolute inset-1 bg-gradient-to-br from-rich-burgundy via-rich-burgundy/90 to-deep-maroon rounded-md overflow-hidden">
+                
+                {/* Geometric Pattern Background */}
+                <div className="absolute inset-0 opacity-40">
+                  <div className="absolute inset-0" style={{
+                    background: `repeating-conic-gradient(from 0deg at 50% 50%, 
+                      #800020 0deg 45deg, 
+                      #D4AF37 45deg 90deg, 
+                      #800020 90deg 135deg, 
+                      #D4AF37 135deg 180deg,
+                      #800020 180deg 225deg, 
+                      #D4AF37 225deg 270deg,
+                      #800020 270deg 315deg, 
+                      #D4AF37 315deg 360deg)`,
+                    backgroundSize: '20px 20px'
+                  }}>
                   </div>
-                  <h3 className="text-2xl font-poiret-one text-warm-gold mb-2">Oracle of Etherias</h3>
-                  <p className="text-ivory-light/60 font-cormorant-infant">Ethereal Guidance</p>
                 </div>
-              </div>
 
-              {/* Card Back */}
-              <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl bg-gradient-to-br from-deep-maroon to-rich-burgundy border border-warm-gold/30 p-8">
-                <div className="text-center h-full flex flex-col justify-center">
-                  <div className="w-12 h-12 mx-auto mb-4">
-                    <svg className="w-full h-full text-warm-gold" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.5L14.09 8.26L20 9L14.09 9.74L12 15.5L9.91 9.74L4 9L9.91 8.26L12 2.5Z" />
-                      <circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.6" />
-                      <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-                    </svg>
+                {/* Central Cross Design */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative w-32 h-32">
+                    <div className="absolute left-1/2 top-6 bottom-6 w-8 bg-gradient-to-b from-warm-gold via-warm-gold/90 to-warm-gold transform -translate-x-1/2 rounded-sm shadow-lg"></div>
+                    <div className="absolute top-1/2 left-4 right-4 h-8 bg-gradient-to-r from-warm-gold via-warm-gold/90 to-warm-gold transform -translate-y-1/2 rounded-sm shadow-lg"></div>
+                    
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-gradient-to-br from-rich-burgundy via-rich-burgundy/80 to-deep-maroon rounded-full shadow-lg border-2 border-warm-gold">
+                      <div className="absolute inset-1 bg-gradient-to-br from-rich-burgundy/90 to-deep-maroon rounded-full">
+                        <div className="absolute inset-1 bg-gradient-to-br from-rich-burgundy/80 to-deep-maroon rounded-full">
+                          <div className="absolute inset-1 bg-rich-burgundy rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-1/2 left-0 w-4 h-4 bg-gradient-to-br from-warm-gold to-warm-gold/80 transform -translate-y-1/2 rounded-sm shadow-md"></div>
+                    <div className="absolute top-1/2 right-0 w-4 h-4 bg-gradient-to-br from-warm-gold to-warm-gold/80 transform -translate-y-1/2 rounded-sm shadow-md"></div>
+                    <div className="absolute top-0 left-1/2 w-4 h-4 bg-gradient-to-br from-warm-gold to-warm-gold/80 transform -translate-x-1/2 rounded-sm shadow-md"></div>
+                    <div className="absolute bottom-0 left-1/2 w-4 h-4 bg-gradient-to-br from-warm-gold to-warm-gold/80 transform -translate-x-1/2 rounded-sm shadow-md"></div>
                   </div>
-                  <h3 className="text-2xl font-poiret-one text-ivory-light mb-4">Oracle of Etherias</h3>
-                  <p className="text-ivory-light/80 font-cormorant-infant mb-6">
-                    Connect with ethereal realms through sacred oracle guidance. Reveals mystical energies and awakens inner wisdom.
-                  </p>
-                  <div className="text-warm-gold font-poiret-one text-xl">From 7€</div>
                 </div>
+
+                <div className="absolute top-4 left-4 w-3 h-3 bg-warm-gold rounded-full opacity-80"></div>
+                <div className="absolute top-4 right-4 w-3 h-3 bg-warm-gold rounded-full opacity-80"></div>
+                <div className="absolute bottom-4 left-4 w-3 h-3 bg-warm-gold rounded-full opacity-80"></div>
+                <div className="absolute bottom-4 right-4 w-3 h-3 bg-warm-gold rounded-full opacity-80"></div>
               </div>
-            </motion.div>
+            </div>
           </div>
+        </div>
 
-          {/* Thoth Tarot Card */}
-          <div className="perspective-1000">
-            <motion.div
-              className="card-container relative w-full h-80"
-              animate={{ rotateY: isFlipped ? 180 : 0 }}
-              transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
-            >
-              {/* Card Front */}
-              <div className="absolute inset-0 backface-hidden rounded-2xl bg-gradient-to-br from-rich-burgundy to-deep-maroon border border-warm-gold/30 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-6 relative">
-                    <div className="absolute inset-0 rounded-full bg-warm-gold/20"></div>
-                    <svg className="w-full h-full" viewBox="0 0 100 100">
-                      {/* Rosicrucian Cross - Traditional Thoth Symbol */}
-                      <path d="M50 10 L50 90" stroke="#D4AF37" strokeWidth="3" opacity="0.9" />
-                      <path d="M20 50 L80 50" stroke="#D4AF37" strokeWidth="3" opacity="0.9" />
-                      <path d="M30 30 L70 70" stroke="#D4AF37" strokeWidth="2" opacity="0.7" />
-                      <path d="M70 30 L30 70" stroke="#D4AF37" strokeWidth="2" opacity="0.7" />
-                      {/* Rose at center */}
-                      <circle cx="50" cy="50" r="8" stroke="#D4AF37" strokeWidth="1.5" fill="none" opacity="0.8" />
-                      <circle cx="50" cy="50" r="4" stroke="#D4AF37" strokeWidth="1" fill="none" opacity="0.9" />
-                      <circle cx="50" cy="50" r="2" fill="#D4AF37" opacity="1" />
-                      {/* Additional mystical elements */}
-                      <circle cx="50" cy="25" r="3" stroke="#D4AF37" strokeWidth="1" fill="none" opacity="0.6" />
-                      <circle cx="50" cy="75" r="3" stroke="#D4AF37" strokeWidth="1" fill="none" opacity="0.6" />
-                      <circle cx="25" cy="50" r="3" stroke="#D4AF37" strokeWidth="1" fill="none" opacity="0.6" />
-                      <circle cx="75" cy="50" r="3" stroke="#D4AF37" strokeWidth="1" fill="none" opacity="0.6" />
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-poiret-one text-warm-gold mb-2">Thoth Tarot</h3>
-                  <p className="text-ivory-light/60 font-cormorant-infant">Ancient Wisdom</p>
-                </div>
+        {/* Card Front (Service Info) */}
+        <div className="absolute inset-0 w-full h-full rounded-2xl bg-gradient-to-br from-ivory-light via-ivory-light to-warm-gold/10 shadow-2xl" 
+             style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
+          <div className="flex flex-col h-full p-6">
+            <div className="flex-1 flex flex-col items-center justify-center text-center space-y-6">
+              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-rich-burgundy to-deep-maroon rounded-full flex items-center justify-center shadow-lg">
+                <div className="text-4xl">{service.cardImage}</div>
               </div>
-
-              {/* Card Back */}
-              <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl bg-gradient-to-br from-deep-maroon to-rich-burgundy border border-warm-gold/30 p-8">
-                <div className="text-center h-full flex flex-col justify-center">
-                  <div className="w-12 h-12 mx-auto mb-4">
-                    <svg className="w-full h-full text-warm-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
-                      <path d="M12 2L22 12L12 22L2 12L12 2Z" fill="currentColor" opacity="0.3" />
-                      <path d="M12 6L18 12L12 18L6 12L12 6Z" stroke="currentColor" strokeWidth="2" />
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2" />
-                      <path d="M12 8v8M8 12h8" stroke="currentColor" strokeWidth="1" opacity="0.7" />
-                    </svg>
+              
+              <h3 className="text-2xl font-poiret-one font-semibold text-black-pearl">{service.title}</h3>
+              <div className="text-lg font-medium text-rich-burgundy">{service.price}</div>
+              
+              <div className="space-y-2">
+                {service.benefits.map((benefit, idx) => (
+                  <div key={idx} className="flex items-center justify-center gap-2 text-sm text-black-pearl/70">
+                    <div className="w-1.5 h-1.5 bg-warm-gold rounded-full"></div>
+                    <span>{benefit}</span>
                   </div>
-                  <h3 className="text-2xl font-poiret-one text-ivory-light mb-4">Thoth Tarot</h3>
-                  <p className="text-ivory-light/80 font-cormorant-infant mb-6">
-                    Experience profound wisdom of Aleister Crowley&apos;s Thoth Tarot. Ancient symbols unlock deep spiritual insights.
-                  </p>
-                  <div className="text-warm-gold font-poiret-one text-xl">From 15€</div>
-                </div>
+                ))}
               </div>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+interface ServiceDescriptionProps {
+  service: Service;
+  index: number;
+}
+
+function ServiceDescription({ service, index }: ServiceDescriptionProps) {
+  const descRef = useRef<HTMLDivElement>(null);
+  const descIsInView = useInView(descRef, { margin: "-20%", once: true });
+
+  return (
+    <motion.div
+      ref={descRef}
+      className="flex flex-col justify-center space-y-6 px-4"
+      initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
+      animate={{ 
+        opacity: descIsInView ? 1 : 0, 
+        x: descIsInView ? 0 : (index % 2 === 0 ? 50 : -50)
+      }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+    >
+      <div className="space-y-4">
+        <h2 className="text-4xl font-poiret-one font-bold text-ivory-light">{service.title}</h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-rich-burgundy to-warm-gold rounded-full"></div>
+        <p className="text-lg text-ivory-light/80 leading-relaxed font-cormorant-infant">
+          {service.description}
+        </p>
+        <div className="text-2xl font-poiret-one font-semibold text-warm-gold">{service.price}</div>
+      </div>
+    </motion.div>
+  );
+}
+
+export function TarotServicesSection() {
+  return (
+    <section className="py-20">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="space-y-24">
+          {services.map((service, index) => (
+            <div key={service.id} className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Card on left for even indices, right for odd */}
+              {index % 2 === 0 ? (
+                <>
+                  <TarotCard service={service} index={index} />
+                  <ServiceDescription service={service} index={index} />
+                </>
+              ) : (
+                <>
+                  <ServiceDescription service={service} index={index} />
+                  <TarotCard service={service} index={index} />
+                </>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

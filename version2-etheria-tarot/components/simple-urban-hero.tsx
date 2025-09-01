@@ -61,9 +61,7 @@ export function SimpleUrbanHero() {
             <span className="text-warm-gold">for the Awakened Soul</span>
           </h2>
           <p className="text-xl text-ivory-light/80 max-w-2xl mx-auto font-cormorant-infant">
-            Profound readings with Thoth Tarot, channeled with intuition, symbols and spiritual connection.
-            From 7€ (mini reading) to 15€ (complete reading). All readings delivered via audio + written summary.
-            Choose your reading and book your consultation via DM.
+            Discover the profound wisdom of ancient divination through personalized readings that illuminate your path and awaken your inner knowing.
           </p>
         </div>
         
