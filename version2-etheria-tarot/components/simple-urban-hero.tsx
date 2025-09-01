@@ -1,6 +1,6 @@
 'use client'
 import { Button } from '@/components/ui/button';
-import { Leaf, Sun, Heart } from 'lucide-react';
+import { Leaf, Sun } from 'lucide-react';
 
 export function SimpleUrbanHero() {
   return (
@@ -97,19 +97,6 @@ export function SimpleUrbanHero() {
           >
             Book a Reading
           </Button>
-        </div>
-
-        {/* Trust indicators */}
-        <div className="flex justify-center items-center gap-8 pt-12">
-          <div className="flex items-center gap-2 text-ivory-light/70">
-            <Heart className="w-5 h-5 text-warm-gold" />
-            <span className="font-medium">Mystical Practitioner</span>
-          </div>
-          <div className="w-px h-6 bg-warm-gold" />
-          <div className="flex items-center gap-2 text-ivory-light/70">
-            <Sun className="w-5 h-5 text-warm-gold" />
-            <span className="font-medium">Ethereal Sanctuary</span>
-          </div>
         </div>
       </div>
       
