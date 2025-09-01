@@ -1,5 +1,4 @@
 'use client'
-import { Button } from '@/components/ui/button';
 import { Leaf, Sun } from 'lucide-react';
 
 export function SimpleUrbanHero() {
@@ -80,23 +79,6 @@ export function SimpleUrbanHero() {
               <span className="text-ivory-light font-semibold">Tarot de Thoth</span>
             </div>
           </div>
-        </div>
-        
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button 
-            size="lg" 
-            className="bg-rich-burgundy hover:bg-rich-burgundy/90 text-ivory-light px-12 py-4 text-xl font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            Begin Your Mystical Journey
-          </Button>
-          <Button 
-            variant="outline"
-            size="lg" 
-            className="border-2 border-warm-gold text-ivory-light hover:bg-warm-gold hover:text-black-pearl px-12 py-4 text-xl font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            Book a Reading
-          </Button>
         </div>
       </div>
       
