@@ -80,39 +80,6 @@ export function SimpleUrbanHero() {
               <span className="text-ivory-light font-semibold">Tarot de Thoth</span>
             </div>
           </div>
-          
-          {/* Service Details */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Oráculo de Etherias Details */}
-            <div className="bg-deep-maroon/70 backdrop-blur-sm rounded-2xl p-6 border border-warm-gold/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Sun className="text-warm-gold w-8 h-8" />
-                <h3 className="text-2xl font-montserrat font-semibold text-ivory-light">Oráculo de Etherias</h3>
-              </div>
-              <p className="text-ivory-light/80 mb-4">
-                Connect with the ethereal realm through sacred oracle guidance. Each reading reveals the mystical energies surrounding your path and awakens your inner wisdom.
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="text-2xl font-semibold text-warm-gold">From $60</div>
-                <div className="text-sm text-ivory-light/60">Per session</div>
-              </div>
-            </div>
-
-            {/* Tarot de Thoth Details */}
-            <div className="bg-deep-maroon/70 backdrop-blur-sm rounded-2xl p-6 border border-warm-gold/30 shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Leaf className="text-warm-gold w-8 h-8" />
-                <h3 className="text-2xl font-montserrat font-semibold text-ivory-light">Tarot de Thoth</h3>
-              </div>
-              <p className="text-ivory-light/80 mb-4">
-                Experience the profound wisdom of Aleister Crowley&apos;s Thoth Tarot. These ancient symbols unlock deep spiritual insights and illuminate your soul&apos;s journey.
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="text-2xl font-semibold text-warm-gold">From $80</div>
-                <div className="text-sm text-ivory-light/60">Per session</div>
-              </div>
-            </div>
-          </div>
         </div>
         
         {/* CTA Buttons */}
