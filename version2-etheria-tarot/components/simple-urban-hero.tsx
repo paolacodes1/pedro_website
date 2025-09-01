@@ -66,6 +66,33 @@ export function SimpleUrbanHero() {
             Choose your reading and book your consultation via DM.
           </p>
         </div>
+        
+        {/* Service badges */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {/* Oracle of Etherias Badge */}
+          <div className="group bg-rich-burgundy/20 border border-warm-gold/30 rounded-full px-6 py-3 backdrop-blur-sm hover:bg-rich-burgundy/30 transition-all duration-300">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 rounded-full bg-warm-gold/20 flex items-center justify-center">
+                <svg className="w-4 h-4 text-warm-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832L14 10.202a1 1 0 000-1.732l-4.445-2.634z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <span className="text-ivory-light font-cormorant-infant font-medium">Oracle of Etherias</span>
+            </div>
+          </div>
+          
+          {/* Thoth Tarot Badge */}
+          <div className="group bg-rich-burgundy/20 border border-warm-gold/30 rounded-full px-6 py-3 backdrop-blur-sm hover:bg-rich-burgundy/30 transition-all duration-300">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 rounded-full bg-warm-gold/20 flex items-center justify-center">
+                <svg className="w-4 h-4 text-warm-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span className="text-ivory-light font-cormorant-infant font-medium">Thoth Tarot</span>
+            </div>
+          </div>
+        </div>
       </div>
       
       {/* Find out more arrow */}
