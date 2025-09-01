@@ -111,7 +111,7 @@ export function TarotServicesSection() {
                   <Leaf className="w-12 h-12 text-warm-gold mx-auto mb-4" />
                   <h3 className="text-2xl font-poiret-one text-ivory-light mb-4">Thoth Tarot</h3>
                   <p className="text-ivory-light/80 font-cormorant-infant mb-6">
-                    Experience profound wisdom of Aleister Crowley's Thoth Tarot. Ancient symbols unlock deep spiritual insights.
+                    Experience profound wisdom of Aleister Crowley&apos;s Thoth Tarot. Ancient symbols unlock deep spiritual insights.
                   </p>
                   <div className="text-warm-gold font-poiret-one text-xl">From 15€</div>
                 </div>
