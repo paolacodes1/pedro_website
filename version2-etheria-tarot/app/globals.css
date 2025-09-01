@@ -44,47 +44,47 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   
-  /* Pedro's Urban Spirit Color Palette */
-  --color-warm-ivory: #F9F5F1;
-  --color-deep-plum: #7E4C74;
-  --color-antique-gold: #C3A27C;
-  --color-sage-blue: #B2D0D3;
-  --color-charcoal: #2B2B2B;
+  /* Etheria Tarot Color Palette */
+  --color-rich-burgundy: #800020;
+  --color-deep-maroon: #722F37;
+  --color-warm-gold: #D4AF37;
+  --color-black-pearl: #1C1C1C;
+  --color-ivory-light: #F9F7F4;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: #F9F5F1;
-  --foreground: #2B2B2B;
-  --card: #F9F5F1;
-  --card-foreground: #2B2B2B;
-  --popover: #F9F5F1;
-  --popover-foreground: #2B2B2B;
-  --primary: #7E4C74;
-  --primary-foreground: #F9F5F1;
-  --secondary: #C3A27C;
-  --secondary-foreground: #2B2B2B;
-  --muted: #B2D0D3;
-  --muted-foreground: #2B2B2B;
-  --accent: #B2D0D3;
-  --accent-foreground: #2B2B2B;
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: #C3A27C;
-  --input: #C3A27C;
-  --ring: #7E4C74;
-  --chart-1: #7E4C74;
-  --chart-2: #C3A27C;
-  --chart-3: #B2D0D3;
-  --chart-4: #F9F5F1;
-  --chart-5: #2B2B2B;
-  --sidebar: #F9F5F1;
-  --sidebar-foreground: #2B2B2B;
-  --sidebar-primary: #7E4C74;
-  --sidebar-primary-foreground: #F9F5F1;
-  --sidebar-accent: #C3A27C;
-  --sidebar-accent-foreground: #2B2B2B;
-  --sidebar-border: #C3A27C;
-  --sidebar-ring: #7E4C74;
+  --background: #1C1C1C;
+  --foreground: #F9F7F4;
+  --card: #722F37;
+  --card-foreground: #F9F7F4;
+  --popover: #1C1C1C;
+  --popover-foreground: #F9F7F4;
+  --primary: #800020;
+  --primary-foreground: #F9F7F4;
+  --secondary: #D4AF37;
+  --secondary-foreground: #1C1C1C;
+  --muted: #722F37;
+  --muted-foreground: #F9F7F4;
+  --accent: #D4AF37;
+  --accent-foreground: #1C1C1C;
+  --destructive: #DC2626;
+  --border: #722F37;
+  --input: #722F37;
+  --ring: #800020;
+  --chart-1: #800020;
+  --chart-2: #D4AF37;
+  --chart-3: #722F37;
+  --chart-4: #F9F7F4;
+  --chart-5: #1C1C1C;
+  --sidebar: #1C1C1C;
+  --sidebar-foreground: #F9F7F4;
+  --sidebar-primary: #800020;
+  --sidebar-primary-foreground: #F9F7F4;
+  --sidebar-accent: #D4AF37;
+  --sidebar-accent-foreground: #1C1C1C;
+  --sidebar-border: #722F37;
+  --sidebar-ring: #800020;
 }
 
 .dark {

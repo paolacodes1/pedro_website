@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${dmSans.variable}`}>
-      <body className="font-dm-sans antialiased bg-gradient-to-br from-slate-50 to-stone-100">
+      <body className="font-dm-sans antialiased bg-black-pearl text-ivory-light">
         {children}
       </body>
     </html>
