@@ -15,18 +15,18 @@ const services: Service[] = [
   {
     id: 'oracle',
     title: 'Oracle of Etherias',
-    description: 'Connect with ethereal realms through sacred oracle guidance. Reveals mystical energies and awakens inner wisdom.',
+    description: 'Journey beyond the veil with sacred oracle divination that channels ethereal wisdom from higher realms. Through intuitive guidance and mystical symbolism, this reading reveals hidden energies surrounding your path, illuminates spiritual blocks, and awakens the dormant wisdom within your soul. Each session opens doorways to profound self-discovery and cosmic understanding.',
     price: 'From 7€',
     cardImage: '🌟',
-    benefits: ['Ethereal guidance', 'Mystical energies', 'Inner wisdom', 'Spiritual awakening']
+    benefits: ['Ethereal realm connection', 'Hidden energy revelation', 'Spiritual awakening', 'Cosmic understanding', 'Soul wisdom activation']
   },
   {
     id: 'thoth',
     title: 'Thoth Tarot',
-    description: 'Experience profound wisdom of Aleister Crowley\'s Thoth Tarot. Ancient symbols unlock deep spiritual insights.',
+    description: 'Delve into the profound mysteries of Aleister Crowley\'s Thoth Tarot, where ancient Egyptian wisdom meets modern psychological insight. These powerful archetypal symbols unlock the deepest layers of your psyche, revealing karmic patterns, shadow work opportunities, and your true spiritual destiny. Each card carries centuries of esoteric knowledge, offering transformative guidance for your evolutionary journey.',
     price: 'From 15€',
     cardImage: '🔮',
-    benefits: ['Ancient wisdom', 'Spiritual insights', 'Deep understanding', 'Sacred symbols']
+    benefits: ['Ancient Egyptian wisdom', 'Karmic pattern revelation', 'Shadow work guidance', 'Psychological insights', 'Spiritual destiny clarity', 'Transformative healing']
   }
 ];
 
